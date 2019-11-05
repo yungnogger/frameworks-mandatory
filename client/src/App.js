@@ -18,7 +18,7 @@ class App extends Component {
     }
 
     async getData() {
-        let url = `http://localhost:8080/api/questions`; // URL of the API.
+        let url = `${this.API_URL}/questions`; // URL of the API.
         let result = await fetch(url); // Get the data
         let json = await result.json(); // Turn it into json
 
@@ -38,7 +38,7 @@ class App extends Component {
 
 
     async postData(question) {
-        let url = `http://localhost:8080/api/questions`;
+        let url = `${this.API_URL}/questions`;
         fetch(url, {
             method: "POST",
             body: JSON.stringify({
@@ -55,7 +55,7 @@ class App extends Component {
     }
 
     postComment(id, text) {
-        let url = `http://localhost:8080/api/questions/${id}/comments/`;
+        let url = `${this.API_URL}/questions/${id}/comments/`;
 
         fetch(url, {
             method: "POST",
@@ -73,7 +73,7 @@ class App extends Component {
     }
 
     async vote(id, commentId, value) {
-        let url = `http://localhost:8080/api/questions/${id}/comments/${commentId}/vote/${value}`;
+        let url = `${this.API_URL}/questions/${id}/comments/${commentId}/vote/${value}`;
         fetch(url, {
             method: "PUT",
             headers: {
