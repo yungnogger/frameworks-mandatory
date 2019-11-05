@@ -52,7 +52,7 @@ app.put("/api/questions/:id/comments/:commentId/vote/:value", (req, res) => {
 });
 
 /**** Start ****/
-const url = process.env.MONGO_URL || "mongodb://localhost/express_db";
+const url = process.env.MONGODB_URL || "mongodb://localhost/express_db";
 mongoose
     .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(async () => {
