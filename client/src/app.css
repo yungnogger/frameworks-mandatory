@@ -1,0 +1,48 @@
+.header * {
+    text-align: center;
+}
+.header p {
+    font-size: 8px;
+}
+.votes {
+    display: inline-block;
+    margin-right: 10px;
+}
+.comment-name {
+    display: inline-block;
+    margin-left: 10px;
+}
+ul {
+    padding-left: 0;
+}
+.comment {
+    border-top: 1px solid #000;
+}
+.comment button {
+    color: green;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid green;
+    margin-right: 2px;
+}
+.post button {
+    color: green;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid green;
+    margin-bottom: 20px;
+}
+.post textarea {
+    border: 2px solid green;
+}
+a {
+    color: green;
+}
+button {
+    cursor: pointer;
+}
+#root {
+    padding-bottom: 50px;
+}
